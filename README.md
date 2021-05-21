@@ -1,7 +1,6 @@
 # diver-drowsiness-detection
 READ ME FILE
-PRITHISH KUMAR RATH (2K18/CO/262)
-NILESH NISHANT (2K18/CO/235)
+PRITHISH KUMAR RATH
 
 Drowsiness Detection in Drivers using Deep Learning Training
 This is available in the training folder
@@ -14,18 +13,17 @@ Two models are developed in this project, they are described as follows -
 •	Baseline Model - This is a standard model built and trained from scratch on the mentioned dataset to detect drowsiness. There is no concept of transfer learning involved.
 •	Final Model - This model is built in such a way that initial layers are that of the VGG-16 Model, pre-trained on imagenet weights. The initial layers are frozen for training, allowing us to fine-tune the later layers for effective feature recognition. The recognized features are then fed to a dense network for classification.
 
-           Baseline Model                                                   Final Model          
-
+         
  
 Training -
 The results of training accuracies vs. epochs are shown below. Complete details of architecture and results can be viewed from the Model & Training Results folder. 
   
-         Figure 1 is of Baseline Model            Figure 2 is of Final Model.
+     
 Results & Conclusions –
 
-S. No.	Model	Accuracy
-1	Baseline Model	68.6%
-2	Final Model	73.2 %
+S. No.	Model	       		Accuracy
+1	Baseline Model		68.6%
+2	Final Model		73.2 %
 
 •	VGG16 model identifies features more effectively than the engineered baseline model because of more depth in the architecture, which allows it to identify both lower level and higher level features
 •	Transfer learning helps us to make the training faster as the initial layers are used to identify local features only, which are same for almost all models. So, freezing the initial layers allows us to speed-up the training remarkably
